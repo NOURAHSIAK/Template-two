@@ -1,3 +1,8 @@
+/* Start Variables */
+:root {
+    --main-color: #19c8fa;
+}
+/* End Variables */
 /* Start Global Rules  */
 * {
     box-sizing: border-box;
@@ -22,19 +27,19 @@ ul {
     margin-right: auto;
 }
 /* small screen */
-@media (max-width:768px) {
+@media (min-width:768px) {
     .container {
         width: 750px;
     }
 }
 /* medium  screen */
-@media (max-width:992px) {
+@media (min-width:992px) {
     .container {
         width:970px;
     }
 }
 /* large screen */
-@media (max-width:1200px) {
+@media (min-width:1200px) {
     .container {
         width:1170px;
     }
@@ -42,9 +47,6 @@ ul {
 
 /* End Global Rules  */
 /* Start header  */
-header {
-    
-}
 header .container {
     display: flex;
     justify-content: space-between;
@@ -56,9 +58,53 @@ header .container::after {
     content: "";
     background-color: #a2a2a2;
     height: 1px;
-    width: calc(100%-30px);
+    width: calc(100% - 30px);
     position: absolute;
     bottom: 0px;
     left: 15px;
+}
+header .container .logo img {
+    height: 40px;
+
+}
+header .container nav {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+header .container nav ul {
+    display: flex;
+}
+header .container nav li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 40px 10px;
+    font-size: 14px;
+    transition: 0.3s;
+    position: relative;
+    z-index: 2;
+}
+
+header .container nav a.active,
+header .container nav a:hover {
+    color: var(--main-color);
+    border-bottom: 1px solid var(--main-color);
+}
+header nav .form {
+    width: 40px;
+    height: 30px;
+    position: relative;
+    margin-left: 30px;
+    border-left: 1px solid white;
+}
+header nav .form i {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    right:0px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 /* End header  */
