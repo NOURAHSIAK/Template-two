@@ -16,7 +16,6 @@ html {
 }
 body {
     font-family: "Open Sans", sans-serif;
-    background-color: black;
 }
 ul {
     list-style: none;
@@ -47,6 +46,54 @@ ul {
 }
 
 /* End Global Rules  */
+/* Start Component */
+.services .title {
+    text-align: center;
+    padding-top:80px;
+}
+.services .title h3 {
+    font-size: 40px;
+    line-height: 46px;
+    font-style: normal;
+    font-weight: 400;
+    position: relative;
+    text-transform:uppercase;
+
+}
+.services .title h3::before{
+    content: "";
+    position: absolute;
+    width: 15px;
+    height:15px;
+    border: 2px solid black;
+    border-radius: 50%;
+    left:50%;
+    bottom:-50px;
+    transform: translateX(-50%);
+    background-color: white;
+    z-index: 1;
+}
+.services .title h3::after{
+    content: "";
+    height:2px;
+    width: 120px;
+    background-color: black;
+    position: absolute;
+    left: 50%;
+    bottom:-42px;
+    transform: translateX(-50%);
+    
+}
+.services .title p {
+    padding-top:100px;
+    width: 500px;
+    display: inline-block;
+    line-height: 30px;
+    color: #777777;
+
+}
+
+/* End Component */
 /* Start header  */
 header {
     position: absolute;
@@ -150,6 +197,7 @@ header nav .toggle-menu {
     background-image: url("../imgs/Owl-Wallpaper-01-1920x1200-1.jpg");
     background-size: cover;
     background-color: #1f2021;
+    position: relative;
 }
 .landing .overlay {
     position: absolute;
@@ -171,13 +219,26 @@ header nav .toggle-menu {
     display: flex;
     justify-content: flex-end;
 }
+@media (max-width:767px) {
+    .landing .txt {
+        width:100%
+
+    }
+    .landing .txt .content {
+        width:100%
+
+    }
+    .landing .change-background {
+        display: none;
+    }
+}
 .landing .txt .content {
     max-width: 500px;
 
 }
 .landing .txt h2 {
-    font-size: 32px;
-    line-height: 48px;
+    font-size: 30px;
+    line-height: 38px;
     font-weight: normal;
     margin-bottom: 20px;
 }
@@ -186,4 +247,42 @@ header nav .toggle-menu {
     line-height: 28px;
 
 }
+.landing .change-background {
+    position:absolute;
+    top: 50%;
+    transform:translate(-50%);
+    color: white;
+}
+.landing .fa-angle-left {
+    left: 30px;
+}
+.landing .fa-angle-right {
+    right: 30px;
+}
+.landing .bullets {
+    position: absolute;
+    left: 50%;
+    bottom:30px;
+    transform: translateX(-50%);
+    display: flex;
+
+    
+}
+.landing .bullets li {
+    width: 20px;
+    height:20px;
+    border: 2px solid white;
+    border-radius: 50%;
+    margin-left: 10px;
+    
+
+}
+.landing .bullets li.active {
+    background-color: var(--main-color);
+    border: none;
+
+}
 /* End Landing */
+/* Start services  */
+
+/* End services  */
