@@ -48,10 +48,10 @@ ul {
 
 /* End Global Rules  */
 /* Start Component */
-.services .title {
+.title {
     text-align: center;
 }
-.services .title h3 {
+.title h3 {
     font-size: 40px;
     line-height: 46px;
     font-style: normal;
@@ -60,7 +60,7 @@ ul {
     text-transform:uppercase;
 
 }
-.services .title h3::before{
+.title h3::before{
     content: "";
     position: absolute;
     width: 15px;
@@ -73,7 +73,7 @@ ul {
     background-color: white;
     z-index: 1;
 }
-.services .title h3::after{
+.title h3::after{
     content: "";
     height:2px;
     width: 120px;
@@ -84,7 +84,7 @@ ul {
     transform: translateX(-50%);
     
 }
-.services .title p {
+.title p {
     padding-top:100px;
     width: 500px;
     max-width: 100%;
@@ -336,3 +336,91 @@ header nav .toggle-menu {
     padding: 30px 20px;
 }
 /* End services  */
+/* Start Design */
+.design {
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    position: relative;
+    overflow: hidden;
+}
+.design .overlay {
+    height: calc(100vh - 20px);
+    width: 100%;
+    background-image: url(../imgs/Space-Background-Image-3.jpg);
+    position: relative;
+}
+.design .overlay .overlap {
+    height: calc(100vh - 20px);
+    width: 100%;
+    background-color: rgba(0, 0, 0,0.7);
+
+}
+.design .overlay .overlap img {
+    position: absolute;
+    left: 100px;
+    bottom: -70px;
+    
+
+}
+.design .overlay .overlap .box-info {
+    position: absolute;
+    right:0px;
+    top:50%;
+    transform: translateY(-50%);
+    width: 50%;
+    height: 60%;
+    background-color: var(--transparent-color);
+}
+.design .overlay .overlap .box-info h4 {
+    padding: 40px 30px;
+    font-size: 26px;
+    font-weight: 400;
+    color: white;
+}
+.design .overlay .overlap .box-info li {
+    display: flex;
+    color: white;
+    padding: 10px 40px;
+}
+.design .overlay .overlap .box-info li i {
+    padding-right: 20px;
+}
+@media (max-width:767px) {
+    .design .overlay .overlap .box-info {
+        width: 100%;
+    }
+    .design .overlay .overlap img {
+        display: none;
+    }
+
+}
+/* End Design */
+/* Start Portfolio */
+.portfolio {
+    padding-top: var(--section-padding); 
+    padding-bottom: var(--section-padding);
+}
+.portfolio .navig ul {
+    display:flex;
+    justify-content: center; 
+}
+.portfolio .navig ul li {
+    margin-left: 20px;
+}
+.portfolio .navig ul .active {
+    color: white;
+    position: relative;
+}
+.portfolio .navig ul .active::after {
+    content: "";
+    height: 40px;
+    width: 40px;
+    background-color: var(--main-color);
+    position: absolute;
+    left:-10px;
+    bottom:-10px;
+    z-index: -1;
+}
+
+/* End Portfolio */
