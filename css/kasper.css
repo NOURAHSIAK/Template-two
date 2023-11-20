@@ -492,7 +492,7 @@ header nav .toggle-menu {
 /* End Portfolio */
 /* Start video */
 .video {
-    position: relative;
+        position: relative;
 }
 .video::after {
     content: "";
@@ -510,13 +510,30 @@ header nav .toggle-menu {
     width: 100%;
     position: absolute;
     top: 50%;
-   
     transform: translate(-50%);
     background-color: var(--transparent-color);
     color: white;
     text-align: center;
     padding: 50px;
+    margin-left: 50%;
 }
 
+.video .texto h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 400;
+}
+.video .texto .button {
+    background-color: black;
+    width: 100px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    display: inline-block;
+    margin-top: 30px;
+    padding:10px;
+
+    
+}
 
 
