@@ -50,6 +50,7 @@ ul {
 /* Start Component */
 .title {
     text-align: center;
+    padding-bottom: 80px;
 }
 .title h3 {
     font-size: 40px;
@@ -295,7 +296,6 @@ header nav .toggle-menu {
     justify-content: space-evenly;
     align-items: center;
     gap:20px;
-    margin:80px 0px;  
 }
 @media (max-width:767px) {
     .services .elements {
@@ -542,34 +542,33 @@ header nav .toggle-menu {
     padding-bottom: var(--section-padding);
     position: relative;
 }
-.about .ipad {
-    position: relative; 
-    padding-top: 70px;
-}
-.about .ipad img {
+.about img {
     position: absolute;
-    bottom:-300px;
+    bottom: -115px;
     left: 50%;
     transform: translateX(-50%);
+    padding-top: 200px;
 }
-.statistics {
-    margin:0px;
-    width: 100%;
-    height:460px;
-    position: absolute;
-    bottom:-95%;
-    left :0px;
+/* End about */
+/* Start statistics */
+.statistics { 
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+    text-align: center;
     background-image: url(../imgs/Purple-Triangle-Mosaic-Background-Graphics-4331089-1.jpg);
+    background-size: cover;
+    position: relative;
 }
 .statistics .stat-box { 
     position: absolute;
     left: 50%;
-    top: 20%;
+    top: 50%;
     transform: translateX(-50%);
     width: 80%;
-    height: 65%;
+    height: 60%;
     background-color: var(--transparent-color);
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
     justify-content: space-around;
     align-items: center;
 }
@@ -597,6 +596,25 @@ header nav .toggle-menu {
     font-size: 50px;
     font-weight: 700;
     padding-bottom: 25px;
+}
+@media (max-width:992px) {
+    .statistics .stat-box {
+        grid-template-columns: repeat(2, 50%);
+    }
+    .statistics .stat-box {
+        height: 80%;
+    }
+}
+@media (max-width:767px) {
+    .statistics .stat-box {
+        grid-template-columns: 100%;
+    }
+    .statistics .stat-box {
+        height: 90%;
+    }
+}
+.test-skills {
+    padding-top: 600px;
 }
 /* end about */
 
