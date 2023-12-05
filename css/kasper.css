@@ -506,49 +506,51 @@ header nav .toggle-menu {
 .video video {
     width: 100%;
 }
-.video .texto {
+.video .textoo {
     width: 100%;
     position: absolute;
     top: 50%;
-    transform: translate(-50%);
+    transform: translateY(-50%);
     background-color: var(--transparent-color);
     color: white;
     text-align: center;
     padding: 50px;
-    margin-left: 50%;
 }
 
-.video .texto h2 {
-    margin-bottom: 20px;
-    font-size: 24px;
-    font-weight: 400;
+.video .textoo h2 {
+    margin: 0 0 30px;
+    font-weight: normal;
 }
-.video .texto .button {
+.video .textoo p {
+    margin-bottom: 30px;
+}
+.video .textoo button {
     background-color: black;
-    width: 100px;
-    height: 40px;
-    justify-content: center;
-    align-items: center;
-    display: inline-block;
+    color: white;
     margin-top: 30px;
-    padding:10px;
-
-    
+    padding:10px 20px;
+    border: none; 
 }
 /* end video  */
 /* Start about */
 .about {
     padding-top: var(--section-padding); 
-    padding-bottom: var(--section-padding);
-    position: relative;
+    overflow: hidden;
+    text-align: center;
 }
 .about img {
-    position: absolute;
-    bottom: -115px;
-    left: 50%;
-    transform: translateX(-50%);
-    padding-top: 200px;
+    position: relative;
+    bottom: -120px;
+    margin-top: -120px;
+    max-width: 100%;
 }
+@media (max-width:767px) {
+    .about img {
+        bottom:-60px;
+        margin-top:-60px;
+    }
+}
+
 /* End about */
 /* Start statistics */
 .statistics { 
@@ -559,8 +561,17 @@ header nav .toggle-menu {
     background-size: cover;
     position: relative;
 }
-.statistics .stat-box { 
+.statistics::before {
+    content: "";
     position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.statistics .stat-box { 
+    position: relative;
     left: 50%;
     top: 50%;
     transform: translateX(-50%);
@@ -575,9 +586,10 @@ header nav .toggle-menu {
 .statistics .stat-box .coffee {
     color: white;
     text-align: center;
+    padding: 50px;
 }
 .statistics .stat-box .coffee i {
-    font-size: large;
+    font-size: medium;
     padding-bottom: 40px;
     position: relative;
 }
@@ -592,10 +604,10 @@ header nav .toggle-menu {
     top: -15px;
     z-index: -1;
 }
-.statistics .stat-box .nbr {
-    font-size: 50px;
+.statistics .stat-box .number {
+    font-size: 40px;
     font-weight: 700;
-    padding-bottom: 25px;
+    padding-bottom: 30px;
 }
 @media (max-width:992px) {
     .statistics .stat-box {
@@ -613,8 +625,5 @@ header nav .toggle-menu {
         height: 90%;
     }
 }
-.test-skills {
-    padding-top: 600px;
-}
-/* end about */
+/* end statistics */
 
