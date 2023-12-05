@@ -626,4 +626,85 @@ header nav .toggle-menu {
     }
 }
 /* end statistics */
+/* start test-skills */
+.test-skills {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+}
+.test-skills .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+@media (min-width:992px)  {
+    .test-skills .container > div {
+         flex-basis: 45%; 
+    }
+   
+}
+.test-skills .container > div > h3 {
+    margin: 0 0 30px;
+    font-weight: normal;
+    text-align: center;
+}
+.test-skills .container > div > p {
+    margin-bottom: 60px;
+    color: #777777;
+    line-height: 2;
+    text-align: center;
+}
+.test-skills .container .testimonial .test1 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.test-skills .container .testimonial .test1 img {
+    width:100px;
+    height:100px;
+    border-radius: 50%;
+    margin-right: 50px;
+}
+@media  (max-width:767px) {
+    .test-skills .container .testimonial .test1 {
+        flex-direction: column;
+        text-align: center;
+
+    }
+    .test-skills .container .testimonial .test1 img {
+        margin:  0 auto 20px;
+
+    }
+}
+.test-skills .container .testimonial .test1 .text1 {
+    line-height: 30px;
+    align-items: center;
+    border-bottom: solid 2px #777777;
+}
+.test-skills .container .testimonial .test1 p {
+   text-align: right;
+   margin-bottom: 10px;
+   color: #777777;
+   font-size: 14px;
+}
+.test-skills .container .testimonial .bullets {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;   
+
+}
+.test-skills .container .testimonial .bullets  li {
+    height:14px;
+    width: 14px;
+    border-radius: 50%;
+    border: solid 1px #aaa ;
+    margin-right: 10px;
+    
+}
+.test-skills .container .testimonial .bullets  .active {
+    background-color: var(--main-color);
+    border: none;
+}
+/* END test-skills */
 
