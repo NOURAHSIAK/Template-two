@@ -706,5 +706,24 @@ header nav .toggle-menu {
     background-color: var(--main-color);
     border: none;
 }
+.test-skills .skills .prog-holder {
+
+}
+.test-skills .skills .prog-holder h4 {
+
+}
+.test-skills .skills .prog-holder .prog {
+
+}
+.test-skills .skills .prog-holder .prog::before {
+
+}
+.test-skills .skills .prog-holder .prog::after {
+
+}
+.test-skills .skills .prog-holder .prog span {
+
+}
+
 /* END test-skills */
 
