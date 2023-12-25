@@ -755,7 +755,7 @@ margin-bottom: 40px;
 
 
 /* END test-skills */
-/* start bande */
+/* start quote */
 .quote {
     padding-top: var(--section-padding);
     padding-bottom: var(--section-padding);
@@ -784,5 +784,28 @@ margin-bottom: 40px;
     display:block;
 
 }
-/* end bande */
+/* end quuote */
+/* start pricing */
+.pricing {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+}
+.prices {
+    display: flex;
+    justify-content: space-around;
+   
+}
+.box-one {
+    width:20%;
+    background-color: #a2a2a2;
+    text-align: center;
+    border-top: solid 2px var(--main-color);
+}
+.pricing .box-one h4 {
+    font-size: 25px;
+    font-weight: normal;
+    text-transform: capitalize;
+}
+
+/* end pricing */
 
