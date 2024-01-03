@@ -90,8 +90,9 @@ ul {
     width: 500px;
     max-width: 100%;
     margin: 0 auto 100px; 
-    line-height: 30px;
+    line-height: 35px;
     color: #777777;
+    font-size: 18px;
 
 }
 
@@ -842,7 +843,7 @@ margin-bottom: 40px;
     margin: 40px auto;
     width: fit-content;
 }
-.pricing .container p {
+.pricing .container .request {
     text-align: center;
     padding-top: 40px;
     font-size: 25px;
@@ -934,5 +935,127 @@ margin-bottom: 40px;
     } 
 }
 /* <!-- end subscribe --> */
+/* START CONTACT US */
+.contactus {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+}
+.contactus .contact-box {
+    position:relative;
+}
+.contactus form {
+    display:flex;
+    flex-direction: column;
+    width: 70%;
+    position: relative;
+}
+.contactus form input[type="email"],.contactus form input[type="text"] {
+    padding: 15px 10px;
+    margin: 10px 0px;
+}
+.contactus form .txt {
+    height: 200px;
+    padding: 15px 10px;
+    margin: 10px 0px;
+}
+.contactus form input[type="email"],.contactus form input[type="text"], .txt:focus {
+    outline:none;
+}
+.contactus form input[type="submit"] {
+    width: 150px;
+    background-color: var(--main-color);
+    align-items: end;
+    border: none;
+    padding: 20px 15px;
+    position: absolute;
+    right: 0px;
+    bottom: -80px;
+    color: white;
+}
+.contactus .phone {
+   position: absolute;
+   left:75%;
+   top: 0px;
+   width: 150px;
+}
+.contactus .phone h4 {
+    font-size: 20px;
+    font-weight: normal;
+}
+.contactus .phone p {
+    margin-top : 20px;
+    line-height: 2;
+}
+.contactus .adress {
+    position: absolute;
+    left:75%;
+    top:50%;
+    width: 200px;
+}
+.contactus .adress h4 {
+    font-size: 20px;
+    font-weight: normal;
+}
+.contactus .adress p {
+    margin-top : 20px;
+    line-height: 2;
+}
+@media (max-width:767px) {
+    .contactus form {
+        width: 100%;
+        margin-top: 200px;
+    }
+    .contactus .phone {
+        position: absolute;
+        left:50%;
+        top:-80%;
+        transform: translateX(-50%);
+
+
+    }
+    .contactus .adress {
+        position: absolute;
+        left:50%;
+        top:-45%;
+        transform: translateX(-50%);
+    }
+
+}
+/* END CONTACT US */
+/* start footer */
+.footer {
+    margin-top: 80px;
+    background-image: url(../imgs/earth-and-space-planets-header.jpg);
+    height: 300px;
+    text-align: center;
+    color: white;
+}
+.footer img {
+    margin: 40px 40px;
+}
+.footer h5  {
+    font-size: 20px;
+    font-weight: normal;
+    padding-bottom: 20px;
+}
+.footer hr {
+    width: 150px;
+    margin: auto;
+}
+.footer .icons {
+    padding: 20px;
+}
+.footer .icons i {
+    padding-left: 10px;
+} 
+
+.footer .final span {
+    color: var(--main-color);
+    font-weight: bold;
+
+}
+
+
+/* end footer */
 
 
